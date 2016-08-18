@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--360浏览器优先以webkit内核解析-->
+
+
+    <title>H+ 后台主题UI框架 - 主页示例</title>
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="css\bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css\font-awesome.min.css?v=4.4.0" rel="stylesheet">
+	<link href="css\plugins\iCheck\custom.css" rel="stylesheet">
+	<link href="css\plugins\switchery\switchery.css" rel="stylesheet">
+    <link href="css\animate.min.css" rel="stylesheet">
+    <link href="css\style.min.css?v=4.1.0" rel="stylesheet">
+    <style>
+    	.switch {
+    		position: relative;
+    		top: 5px;
+    	}
+    	.ww-table {
+    		margin-bottom: 10px;
+    	}
+    	.ww-table tr {
+    	}
+    	.ww-table tr td {
+    		height: 24px;
+    		line-height: 24px;
+    	}
+    	.ww-table tr td:first-child {
+    		width: 100px;
+    		text-align: right;
+    	}
+    	
+    </style>
+
+</head>
+
+<body class="gray-bg">
+    <div class="row  border-bottom white-bg dashboard-header">
+        <div class="col-sm-12">
+            <h2>系统状态</h2>
+
+            <hr>
+        </div>
+        
+        <div class="col-sm-8">
+	        <div class="panel panel-default">
+                <div class="panel-heading">
+                	<strong>版本信息</strong>
+                </div>
+                <div class="panel-body">
+                    <table class="ww-table">
+                    	<tr>
+                    		<td>当前软件版本：</td><td>0.2.35</td>
+                		</tr>
+                		<tr>
+                    		<td>当前硬件版本：</td><td>R1D</td>
+                    	</tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="col-sm-8">
+	        <div class="panel panel-default">
+                <div class="panel-heading">
+                	<strong>LAN口状态</strong>
+                </div>
+                <div class="panel-body">
+                    <table class="ww-table">
+                    	<tr>
+                    		<td>Mac地址：</td><td>10:48:B1:E8:17:6E</td>
+                		</tr>
+                		<tr>
+                    		<td>IP地址：</td><td>192.168.31.1</td>
+                    	</tr>
+                    	<tr>
+                    		<td>子网掩码：</td><td>255.255.255.0</td>
+                    	</tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="col-sm-8">
+	        <div class="panel panel-default">
+                <div class="panel-heading">
+                	<strong>无线状态</strong>
+                </div>
+                <div class="panel-body">
+                    <table class="ww-table">
+                    	<tr>
+                    		<td>WIFI 2.4G：</td><td>开启</td>
+                		</tr>
+                		<tr>
+                    		<td>SSID：</td><td>Xiaomi_176E</td>
+                    	</tr>
+                    	<tr>
+                    		<td>信道：</td><td>自动</td>
+                    	</tr>
+                    	<tr>
+                    		<td>模式：</td><td>Master</td>
+                    	</tr>
+                    </table>
+                    <table class="ww-table">
+                    	<tr>
+                    		<td>WIFI 5G：</td><td>开启</td>
+                		</tr>
+                		<tr>
+                    		<td>SSID：</td><td>Xiaomi_176E</td>
+                    	</tr>
+                    	<tr>
+                    		<td>信道：</td><td>自动</td>
+                    	</tr>
+                    	<tr>
+                    		<td>模式：</td><td>Master</td>
+                    	</tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        
+        
+    </div>
+    <script src="js\jquery.min.js?v=2.1.4"></script>
+    <script src="js\bootstrap.min.js?v=3.3.6"></script>
+    <script src="js\plugins\layer\layer.min.js"></script>
+    <script src="js\content.min-1.js"></script>
+    <script src="js\plugins\iCheck\icheck.min.js"></script>
+    <script src="js\plugins\switchery\switchery.js"></script>
+    <script src="js\welcome.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        	$(".i-checks").iCheck({
+        		checkboxClass:"icheckbox_square-green",
+        		radioClass:"iradio_square-green"
+        	});
+        	document.querySelector(".js-switch"),
+			new Switchery(i, {
+				color: "#1AB394"
+			});
+        });
+    </script>
+</body>
+
+</html>

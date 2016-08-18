@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--360浏览器优先以webkit内核解析-->
+
+
+    <title>H+ 后台主题UI框架 - 主页示例</title>
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="css\bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css\font-awesome.min.css?v=4.4.0" rel="stylesheet">
+	<link href="css\plugins\iCheck\custom.css" rel="stylesheet">
+	<link href="css\plugins\switchery\switchery.css" rel="stylesheet">
+    <link href="css\animate.min.css" rel="stylesheet">
+    <link href="css\style.min.css?v=4.1.0" rel="stylesheet">
+    <style>
+    	.switch {
+    		position: relative;
+    		top: 5px;
+    	}
+    </style>
+
+</head>
+
+<body class="gray-bg">
+    <div class="row  border-bottom white-bg dashboard-header">
+        <div class="col-sm-12">
+            <h2>WiFi设置</h2>
+
+            <hr>
+        </div>
+        <div class="col-sm-10 col-md-6">
+        	<form class="form-horizontal">
+        		<div class="form-group">
+                    <label class="col-sm-3 control-label">开启2.4G网络</label>
+
+                    <div class="col-sm-8">
+                    	<div class="switch">
+                            <div class="onoffswitch">
+                                <input type="checkbox" checked="" class="onoffswitch-checkbox" id="example1">
+                                <label class="onoffswitch-label" for="example1">
+                                    <span class="onoffswitch-inner"></span>
+                                    <span class="onoffswitch-switch"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <!--<div class="checkbox i-checks">
+                            <label style="padding-left: 0;"><input type="checkbox" value=""> <i></i> 开启</label>
+                        </div>-->
+                    </div>
+                </div>
+        		<div class="form-group">
+                    <label class="col-sm-3 control-label">名称</label>
+
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">加密方式</label>
+
+                    <div class="col-sm-8">
+                        <select name="account" class="form-control">
+                            <option>强加密(WPA/WPA2个人版)
+                            </option><option>选项 2
+                            </option><option>选项 3
+                            </option><option>选项 4
+                        </option></select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">密码</label>
+
+                    <div class="col-sm-8">
+                        <input type="password" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+
+                    <div class="col-sm-8 col-sm-offset-3">
+                        <div class="checkbox i-checks">
+                            <label style="padding-left: 0;"><input type="checkbox" value=""> <i></i> 显示密码</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">开启5G网络</label>
+
+                    <div class="col-sm-8">
+                        <div class="switch">
+                            <div class="onoffswitch">
+                                <input type="checkbox" checked="" class="onoffswitch-checkbox" id="example1">
+                                <label class="onoffswitch-label" for="example1">
+                                    <span class="onoffswitch-inner"></span>
+                                    <span class="onoffswitch-switch"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        		<div class="form-group">
+                    <label class="col-sm-3 control-label">名称</label>
+
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">加密方式</label>
+
+                    <div class="col-sm-8">
+                        <select name="account" class="form-control">
+                            <option>强加密(WPA/WPA2个人版)
+                            </option><option>选项 2
+                            </option><option>选项 3
+                            </option><option>选项 4
+                        </option></select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">密码</label>
+
+                    <div class="col-sm-8">
+                        <input type="password" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+
+                    <div class="col-sm-8 col-sm-offset-3">
+                        <div class="checkbox i-checks">
+                            <label style="padding-left: 0;"><input type="checkbox" value=""> <i></i> 显示密码</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="col-sm-4 col-sm-offset-3">
+                        <button type="submit" class="btn btn-primary">保&nbsp;&nbsp;存</button>
+                    </div>
+                </div>
+        	</form>
+        </div>
+
+    </div>
+    <script src="js\jquery.min.js?v=2.1.4"></script>
+    <script src="js\bootstrap.min.js?v=3.3.6"></script>
+    <script src="js\plugins\layer\layer.min.js"></script>
+    <script src="js\content.min-1.js"></script>
+    <script src="js\plugins\iCheck\icheck.min.js"></script>
+    <script src="js\plugins\switchery\switchery.js"></script>
+    <script src="js\welcome.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        	$(".i-checks").iCheck({
+        		checkboxClass:"icheckbox_square-green",
+        		radioClass:"iradio_square-green"
+        	});
+        	document.querySelector(".js-switch"),
+			new Switchery(i, {
+				color: "#1AB394"
+			});
+        });
+    </script>
+</body>
+
+</html>
